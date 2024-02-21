@@ -8,3 +8,21 @@ Super basic [11ty](https://www.11ty.dev) starter to get you moving in the right 
 2. Open the new repository in Codespaces or your own development environment.
 3. Make sure you have Node.js installed (this will be automatic if using Codespaces).
 4. In your terminal type `npx @11ty/eleventy --serve` to build and view the template.
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/styles/screen.css">
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <script src="eleventy.js"></script>
+</head>
+<body>
+
+    {{ content }}
+</body>
+</html>
